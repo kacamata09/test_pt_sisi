@@ -51,7 +51,7 @@ function extractData(text) {
     const regexH1 = /H\.1 NOMOR\s*:\s*(\d+\s*\d*\s*\d*\s*\d*\s*\d*)/;
     const regexH2 = /H\.2\s*X/;
     const regexA1 = /A\.1 NPWP\s*(\d{15})/;
-    const regexInstansiNPWP = /C\.1 NPWP Instansi Pemerintah\s*(\d{15})/;
+    const regexInstansiNPWP = /C\.1 NPWP Instansi Pemerintah\s*:\s*(\d+\s*\d*\s*\d*\s*\d*\s*\d*)/;
     const regexPenandatangan = /C\.5 Nama Penandatangan\s*([A-Za-z\s]+)/;
   
     const h1Nomor = text.match(regexH1) ? text.match(regexH1)[1] : null;
